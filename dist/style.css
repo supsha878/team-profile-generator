@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner {
+    background-color: rgb(40, 49, 176);
+    flex: 0 0 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+main {
+    flex: 0 0 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: lightgrey;
+    margin-top: 3.5%;
+    flex: 0 0 27.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+.card header {
+    background-color: rgb(40, 49, 176);
+    color: white;
+    flex: 0 0 100%;
+    padding: 5%;
+}
+
+.card ul {
+    margin-top: 5%;
+    flex: 0 0 80%;
+    padding: 2.5%;
+}
+
+.card li {
+    padding: 2%;
+    border: 1px gray solid;
+    background-color: white;
+}

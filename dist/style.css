@@ -6,7 +6,7 @@ body {
 }
 
 .banner {
-    background-color: rgb(40, 49, 176);
+    background-color: rgb(55, 64, 189);
     flex: 0 0 100%;
     height: 8rem;
     display: flex;
@@ -33,7 +33,7 @@ main {
 }
 
 .card header {
-    background-color: rgb(40, 49, 176);
+    background-color: rgb(55, 64, 189);
     color: white;
     flex: 0 0 100%;
     padding: 5%;

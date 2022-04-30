@@ -30,6 +30,6 @@ At larger companies, employees will be split up into teams with each of them ful
 
 ## Deployment
 
-[Deployment Video]()
+[Deployment Video](https://youtu.be/l5-xCIuGZC4)
 
 [GitHub Repository](https://github.com/supsha878/team-profile-generator)

@@ -1,10 +1,12 @@
 body {
     background-color: rgb(235, 235, 235);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* banner style */
 .banner {
     background-color: rgb(55, 64, 189);
     flex: 0 0 100%;
@@ -15,6 +17,7 @@ body {
     color: white;
 }
 
+/* card container style */
 main {
     flex: 0 0 70%;
     display: flex;
@@ -22,6 +25,7 @@ main {
     justify-content: space-evenly;
 }
 
+/* card style */
 .card {
     background-color: lightgrey;
     margin-top: 3.5%;

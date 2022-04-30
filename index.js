@@ -8,6 +8,7 @@ const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 
+// employee array
 const employees = [];
 
 // initialize app, get responses for a manager
@@ -133,6 +134,7 @@ function addIntern() {
         });
 }
 
+// performs check based on last question to add a new engineer, intern, or end the user input
 function addNextEmployee(nextEmployee) {
     if (nextEmployee === "Engineer") {
         addEngineer();
@@ -143,10 +145,7 @@ function addNextEmployee(nextEmployee) {
     }
 }
 
-//var html = content.generateHTML(employees);
-    //fs.writeFile("./dist/index.html", html, (err) =>
-    //    err ? console.log(err) : console.log("success"))
-
+// writes HTML file using function to generate the content
 function writeHTML() {
     var html = content.generateHTML(employees);
     fs.writeFile("./dist/index.html", html, (err) =>

@@ -3,6 +3,7 @@ const Manager = require("../lib/Manager");
 const Engineer = require("../lib/Engineer");
 const Intern = require("../lib/Intern");
 
+// returns complete HTML content
 function generateHTML(employees) {
     return `<!DOCTYPE html>
     <html lang="en">
@@ -30,6 +31,7 @@ function generateHTML(employees) {
     </html>`;
 }
 
+// creates employee cards based with information displayed depending on employee role
 function generateCards(employees) {
     let cardsHTML = ``;
     for (let i = 0; i < employees.length; i++) {
@@ -47,14 +49,12 @@ function generateCards(employees) {
             thirdItem = `School: ${employees[i].getSchool()}`
         }
 
-        cardsHTML += `
-        <div class="card">
+        cardsHTML += `<div class="card">
             <header>
                 <h2>${employees[i].getName()}</h2>
                 <h3>${emoji} ${position}</h3>
             </header>
             <ul>
-            <!-- a href="mailto: sharmasup565@gmail.com">shar -->
                 <li>ID: ${employees[i].getId()}</li>
                 <li>Email: <a href="mailto: ${employees[i].getEmail()}">${employees[i].getEmail()}</a></li>
                 <li>${thirdItem}</li>
@@ -65,4 +65,5 @@ function generateCards(employees) {
     return cardsHTML;
 }
 
+// export function
 module.exports = { generateHTML };
